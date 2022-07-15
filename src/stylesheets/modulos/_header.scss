@@ -1,0 +1,36 @@
+.header{
+    // position: absolute;
+    // z-index: 100;
+    // display: flex;
+    &__desktop{
+        display: flex;
+        margin-top: 23px;
+        li{
+            margin-left: 20px;
+            list-style: none;
+            color:$white;
+        }
+        @include Small{
+            display: none;
+        }
+    }
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        margin-top: 15px;
+        color:$white;
+        @include Small{
+            margin-top: 20px;
+        }
+    }
+    &__menu img{
+        display: none;
+        @include Small{
+            display: block;
+            margin-top: 45px;
+        }
+    }
+    
+}

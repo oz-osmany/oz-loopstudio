@@ -1,0 +1,50 @@
+.banner{
+    
+    &__imageD{
+        display: block;
+        @include Small{
+            display: none;
+        }
+    }
+    &__imageM{
+        display: none;
+        @include Small{
+            display: block;
+            width: 375px;
+        }
+    }
+    &__letrero{
+        border: 1px solid $white;
+        height: 250px;
+        margin-left: 10%;
+        position: absolute;
+        top: 215px;
+        width: 650px;
+        @include Small{
+            margin-right: 6%;
+            margin-left: 6%;
+            width: 330px;
+            height: 190px;
+            top: 8.5%;
+        }
+
+    }
+    &__letrero p{
+        color: $darkGray;
+        font-size: 65px;
+        // font-family: "Alata",sans-serif;
+        font-family: 'Josefin Sans', sans-serif;;
+        font-weight: 300;
+        margin: 0;
+        padding-left: 50px;
+        text-align: start;
+        text-transform: uppercase;
+        padding-top: 10px;
+        @include Small{
+            padding-left: 25px;
+            padding-right: 30px;
+            font-size: 35px;
+            margin-top: 20px;
+        }
+    }
+}

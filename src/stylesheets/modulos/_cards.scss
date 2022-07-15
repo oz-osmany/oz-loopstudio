@@ -1,0 +1,15 @@
+.cards{
+    height: 150px;
+    width: 25%;
+    @include Small{
+        width: 100%;
+    }
+    
+}
+.cards img{
+    // width: 287px;
+    float: right;
+    @include Small{
+        width: 100%;
+    }
+}

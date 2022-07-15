@@ -1,0 +1,17 @@
+.container{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    @include Small{
+        width: 375px;
+    }
+    &__inner{
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: transparent;
+        @include Small{
+            padding-left: 6%;
+            padding-right: 6%;
+        }
+    }
+}
